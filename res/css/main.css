@@ -1,0 +1,37 @@
+/* Robot Font */
+@font-face {
+	font-family:"Robot";
+	src:url("../../assets/fonts/Classic Robot.ttf");
+}
+
+@font-face {
+	font-family:"Robot Bold";
+	src:url("../../assets/fonts/Classic Robot Bold.ttf");
+}
+
+#game {
+	border:5px solid black;
+	height:600px;
+	width:600px;
+	margin-left:325px;
+	margin-right:250px;
+}
+body, #title {
+	text-align:center;
+	background-color:#99E0F7; /* light blue */
+	font-family:"Robot";
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+a:visited {
+	text-decoration:none;	
+}
+
+a {
+	text-decoration:none;
+	font-family:"Robot Bold";
+	color:#000000; /* black */
+}
