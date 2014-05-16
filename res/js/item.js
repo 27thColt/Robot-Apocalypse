@@ -20,7 +20,7 @@ itemThrow = function() {
 
 				playState.player.animations.play("throwRight");
 
-				cooldown = 200;
+				cooldown = 100;
 			} else if (direct == "LEFT" && cooldown == 0) {
 				var baseball = playState.items.create(playState.player.body.x, playState.player.body.y + 20, "baseball");
 				playState.game.physics.enable(baseball, Phaser.Physics.ARCADE);
@@ -32,7 +32,7 @@ itemThrow = function() {
 
 				playState.player.animations.play("throwLeft");
 
-				cooldown = 200;
+				cooldown = 100;
 			};
 		} else if (playState.item === "bat" && cooldown == 0) {
 			if (direct == "RIGHT") {
@@ -48,7 +48,7 @@ itemThrow = function() {
 
 				playState.player.animations.play("throwRight");
 
-				cooldown = 190;
+				cooldown = 90;
 			} else if (direct == "LEFT") {
 				var bat = playState.items.create(playState.player.body.x, playState.player.body.y + 20, "bat");
 				bat.animations.add("left", [0], 1, false);
@@ -62,7 +62,7 @@ itemThrow = function() {
 
 				playState.player.animations.play("throwLeft");
 
-				cooldown = 190;
+				cooldown = 90;
 			};
 		} else if (playState.item === "knife" && cooldown == 0) {
 			if (direct == "RIGHT") {
@@ -78,7 +78,7 @@ itemThrow = function() {
 
 				playState.player.animations.play("throwRight");
 
-				cooldown = 175;
+				cooldown = 80;
 			} else if (direct == "LEFT") {
 				var knife = playState.items.create(playState.player.body.x, playState.player.body.y + 20, "knife");
 				knife.animations.add("left", [0], 1, false);
@@ -92,7 +92,7 @@ itemThrow = function() {
 
 				playState.player.animations.play("throwLeft");
 
-				cooldown = 175;
+				cooldown = 80;
 			};
 		} else if (playState.item === "axe" && cooldown == 0) {
 			if (direct == "RIGHT") {
@@ -108,7 +108,7 @@ itemThrow = function() {
 
 				playState.player.animations.play("throwRight");
 
-				cooldown = 150;
+				cooldown = 70;
 			} else if (direct == "LEFT") {
 				var axe = playState.items.create(playState.player.body.x + 40, playState.player.body.y + 20, "axe");
 				axe.animations.add("spin", [0, 1, 2, 3], 6, true);
@@ -122,7 +122,7 @@ itemThrow = function() {
 
 				playState.player.animations.play("throwRight");
 
-				cooldown = 150;
+				cooldown = 70;
 			};
  		};
  	};

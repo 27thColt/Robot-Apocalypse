@@ -10,7 +10,7 @@ menuState = {
 
 		playState.kills = 0;
 		playState.coins = 0;
-		playState.item = "axe";
+		playState.item = "none";
 		playState.ride = "Standard Bike";
 
 		this.controlsButton = this.game.add.button(20, 150, "button", this.ctrlBtn);
@@ -39,10 +39,10 @@ helpState = {
 		var bg = game.add.sprite(200, 200, "BG_MENU");
 		this.game.add.text(20, 0, "Robot Apocalypse", bigTextStyle);
 
-		this.game.add.text(20, 50, "WASD - Move and jump", textStyle);
+		this.game.add.text(20, 50, "Arrow keys - Move and jump", textStyle);
 		this.game.add.text(20, 70, "SPACEBAR - Shoot your item", textStyle);
 		this.game.add.text(20, 90, "S - Enter and exit the shop", textStyle);
-		this.game.add.text(20, 110, "Hold jump (W) to kill enemies or shoot your item to kill them.", textStyle);
+		this.game.add.text(20, 110, "Hold jump (Up) to kill enemies or shoot your item to kill them.", textStyle);
 		this.game.add.text(20, 130, "Each item has a cool down before you can use it", textStyle);
 		this.game.add.text(20, 150, "so you can't spam spacebar all the time.", textStyle);
 		this.game.add.text(20, 170, "The more kills you get, more enemies will appear.", textStyle);
