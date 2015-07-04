@@ -82,7 +82,7 @@ addMore = function() {
         //for shooting 
         shoot = function() {
             if (direction == "right" && turret.alive == true) {
-                var lazer = playState.lazers.create(turret.body.x + 20, turret.body.y + 10, "turretLazer");
+                var lazer = playState.lazers.create(turret.body.x + 20, turret.body.y + 20, "turretLazer");
                 playState.game.physics.enable(lazer, Phaser.Physics.ARCADE);
 
                 lazer.body.velocity.x = 140;
@@ -90,7 +90,7 @@ addMore = function() {
                 lazer.body.allowGravity = false;
                 lazer.outOfBoundsKill = true;
             } else if (direction == "left" && turret.alive == true) {
-                var lazer = playState.lazers.create(turret.body.x, turret.body.y + 10, "turretLazer");
+                var lazer = playState.lazers.create(turret.body.x, turret.body.y + 20, "turretLazer");
                 playState.game.physics.enable(lazer, Phaser.Physics.ARCADE);
 
                 lazer.body.velocity.x = -140;
